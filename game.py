@@ -8,7 +8,7 @@ py = 0
 class Player(pygame.sprite.Sprite):
 	def  __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("player.png")	
+		self.image = pygame.image.load("assets/player.png")	
 player1 = Player()
 while run:
 	for event in pygame.event.get():
