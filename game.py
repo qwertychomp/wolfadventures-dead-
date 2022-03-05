@@ -8,9 +8,10 @@ py = 0
 class Player(pygame.sprite.Sprite):
 	def  __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("assets/player.png")	
+		self.image = pygame.image.load("assets/wolf.jpeg")	
 player1 = Player()
 while run:
+	screen.fill((0,0,0))
 	for event in pygame.event.get():
 		keypress = pygame.key.get_pressed()
 		if keypress[pygame.K_RIGHT]:
